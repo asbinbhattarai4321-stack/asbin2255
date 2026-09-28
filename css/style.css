@@ -1,0 +1,209 @@
+
+body{
+
+    background-color: rgb(245, 245, 245);
+
+    color:black;
+
+    list-style-type: height 1.6;
+
+    font-family: 'sagoi UI', roboto, sens-serif;
+
+}
+
+header{
+
+    background-color:aquamarine;
+
+    color:blueviolet
+
+}
+
+.header-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+nav {
+
+    width: 100%;
+
+}
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 60px;
+
+    justify-content: center;
+
+    margin-top: 5px;
+
+}
+
+nav a:hover{
+
+    color:gold;
+
+}
+
+.logo img{
+
+    margin-top: 30px;
+
+}
+
+
+/* Navigation Heading Color */
+
+nav a {
+
+    color: blueviolet;
+
+    text-decoration: none;
+
+}
+
+
+/* Div Sections */
+
+.about-container {
+
+    background-color: lightblue;
+
+    padding: 20px;
+
+    margin: 20px;
+
+}
+
+.skills-container {
+
+    background-color: lightgreen;
+
+    padding: 20px;
+
+    margin: 20px;
+
+}
+
+.projects-container {
+
+    background-color: lavender;
+
+    padding: 20px;
+
+    margin: 20px;
+
+}
+
+.education-container {
+
+    background-color: lightblue;
+
+    padding: 20px;
+
+    margin: 20px;
+
+}
+
+.contact-container {
+
+    background-color: lavenderblush;
+
+    padding: 20px;
+
+    margin: 20px;
+
+}
+
+
+/* Heading Colors */
+
+.about-heading {
+
+    color: darkblue;
+
+}
+
+.about-heading u {
+
+    color: gold;
+
+}
+
+.skills-heading h2 {
+
+    color: darkgreen;
+
+}
+
+.projects-heading h2 {
+
+    color: purple;
+
+}
+
+.education-heading h2 {
+
+    color: darkblue;
+
+}
+
+.contact-heading h2 {
+
+    color: deeppink;
+
+}
+
+
+/* Project Divs */
+
+.projects-content {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+.project-one, .project-two {
+
+    border: 1px solid blueviolet;
+
+    padding: 20px;
+
+}
+
+
+/* Footer */
+
+.footer-container {
+
+    background-color: aquamarine;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+/* Rounded Borders and Shadow for Whole Sections */
+
+.about-container,
+.skills-container,
+.projects-container,
+.education-container,
+.contact-container {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px black;
+
+}
