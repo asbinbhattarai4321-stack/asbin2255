@@ -1,4 +1,3 @@
-
 body{
 
     background-color: rgb(245, 245, 245);
@@ -96,14 +95,56 @@ nav a {
 }
 
 .projects-container {
-
     background-color: lavender;
-
     padding: 20px;
-
     margin: 20px;
-
 }
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects-content article {
+    width: 100%;
+}
+
+.project-one,
+.project-two {
+    border: 1px solid blueviolet;
+    padding: 20px;
+}
+
+.project-one {
+
+    background-color: lightblue;
+    border: 1px solid blueviolet;
+    padding: 20px;
+}
+
+.project-two {
+    background-color:aliceblue;
+    border: 1px solid blueviolet;
+    padding: 20px;
+}
+
+.project-one h3 {
+    color: red;
+}
+
+.project-two h3 {
+    color:burlywood;
+}
+
+.project-one h3:hover {
+    color: gold;
+}
+
+.project-two h3:hover {
+    color: gold;
+}
+
 
 .education-container {
 
@@ -196,6 +237,7 @@ nav a {
 
 }
 
+
 /* Rounded Borders and Shadow for Whole Sections */
 
 .about-container,
@@ -203,7 +245,81 @@ nav a {
 .projects-container,
 .education-container,
 .contact-container {
+
     border-radius: 15px;
+
     box-shadow: 0 4px 12px black;
 
+}
+
+
+/* About Content */
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 200px;
+
+    gap: 20px;
+
+    align-items: center;
+
+}
+
+
+/* About Paragraph */
+
+.about-content p {
+
+    grid-column: 1;
+
+}
+
+
+/* About Image */
+
+.about-content img {
+
+    grid-column: 2;
+
+    grid-row: 1;
+
+    width: 150px;
+
+    height: auto;
+
+}
+
+
+/* Remove the line break */
+
+.about-content br {
+
+    display: none;
+
+}
+
+@media (max-width:768px){
+    .header-container{
+        flex-direction: column;
+    }
+
+    }
+nav ul{
+    flex-direction: column;
+
+}
+
+.about-container{
+    flex-direction: column;
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+.header-container{
+    flex-direction: column;
+}
+.about-container{
+    flex-direction: column;
+    }
 }
