@@ -268,3 +268,19 @@ nav a:hover {
         gap: 15px;
     }
 }
+
+
+.education-content {
+    overflow-x: auto;
+}
+
+@media (max-width: 767px) {
+    .education-container table {
+        font-size: 14px;
+    }
+
+    .education-container th,
+    .education-container td {
+        padding: 6px 4px;
+    }
+}
