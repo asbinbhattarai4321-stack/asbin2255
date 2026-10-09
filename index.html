@@ -2,215 +2,575 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="css/style.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="sample.js" defer></script>
+
     <title>Asbin Portfolio</title>
+
 </head>
 
 <body>
 
     <div class="page-container">
 
+        <!-- ================= HEADER ================= -->
+
         <header>
+
             <div class="header-container">
+
                 <nav>
+
                     <div class="logo">
                         <img src="images/logo.jpg" alt="logo" width="120">
                     </div>
+
                     <div class="nav-links">
+
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#Skills">Skills</a></li>
-                            <li><a href="#Project">Projects</a></li>
-                            <li><a href="#Education">Education</a></li>
+
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+
+                            <li>
+                                <a href="#Skills">Skills</a>
+                            </li>
+
+                            <li>
+                                <a href="#Project">Projects</a>
+                            </li>
+
+                            <li>
+                                <a href="#Education">Education</a>
+                            </li>
+
                         </ul>
+
                     </div>
+
                 </nav>
+
+
                 <div class="search-container">
+
                     <form>
+
                         <input type="text" placeholder="search">
-                        <button type="submit">Search</button>
+
+                        <button type="submit">
+                            Search
+                        </button>
+
                     </form>
+
                 </div>
+
             </div>
+
         </header>
 
+
+        <!-- ================= ABOUT ================= -->
+
         <div class="about-container">
+
             <section id="about">
+
                 <div class="about-heading">
+
                     <h1>About me</h1>
+
                 </div>
+
+
                 <div class="about-content">
+
                     <img src="images/profile.jpg" alt="Asbin" width="200">
+
+
                     <p>
+
                         <strong>This is me, Asbin Bhattarai.</strong>
+
                         <span>
-                            I am a second-year Bachelor of Information Technology (BIT) student from Nepal who is still discovering what I want to do in the future.
+                            I am a second-year Bachelor of Information Technology
+                            (BIT) student from Nepal who is still discovering what
+                            I want to do in the future.
                         </span>
-                        I am interested in technology, especially artificial intelligence, machine learning, cloud computing, and software development. I consider myself a beginner, but I am willing to learn and improve step by step. Alongside my studies, I have learned about teamwork, responsibility, and communication.
+
+                        I am interested in technology, especially artificial
+                        intelligence, machine learning, cloud computing, and
+                        software development.
+
+                        I consider myself a beginner, but I am willing to learn
+                        and improve step by step.
+
+                        Alongside my studies, I have learned about teamwork,
+                        responsibility, and communication.
+
                     </p>
+
                 </div>
+
             </section>
+
         </div>
+
+
+        <!-- ================= IMAGE SLIDER ================= -->
+
+        <div class="slider-container">
+
+            <div class="slider">
+
+                <div class="slider-track">
+
+                    <div class="slide">
+                        <img src="images/1.jpg" alt="Image 1">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/2.jpg" alt="Image 2">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/3.jpg" alt="Image 3">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/4.jpg" alt="Image 4">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/5.jpg" alt="Image 5">
+                    </div>
+
+                </div>
+
+
+                <!-- Slider Buttons -->
+
+                <button class="slider-btn prev" aria-label="Previous image">
+                    ❮
+                </button>
+
+                <button class="slider-btn next" aria-label="Next image">
+                    ❯
+                </button>
+
+            </div>
+
+            <div class="slider-pagination" aria-label="Choose an image">
+                <button class="slide-indicator" type="button" aria-label="Show image 1" aria-current="true">1</button>
+                <button class="slide-indicator" type="button" aria-label="Show image 2">2</button>
+                <button class="slide-indicator" type="button" aria-label="Show image 3">3</button>
+                <button class="slide-indicator" type="button" aria-label="Show image 4">4</button>
+                <button class="slide-indicator" type="button" aria-label="Show image 5">5</button>
+            </div>
+
+        </div>
+
+
+        <!-- ================= SKILLS ================= -->
 
         <div class="skills-container">
+
             <section id="Skills">
+
                 <div class="skills-heading">
+
                     <h2>My skills</h2>
+
                 </div>
+
+
                 <div class="skills-content">
+
                     <dl>
+
                         <dt>Programming Language</dt>
-                        <dd>Java, Python, C#, JS</dd>
+
+                        <dd>
+                            Java, Python, C#, JS
+                        </dd>
+
+
                         <dt>Database</dt>
-                        <dd>MySQL, Oracle, MongoDB, PostgreSQL</dd>
+
+                        <dd>
+                            MySQL, Oracle, MongoDB, PostgreSQL
+                        </dd>
+
+
                         <dt>Framework</dt>
-                        <dd>Spring Boot, Angular, .NET, Django</dd>
+
+                        <dd>
+                            Spring Boot, Angular, .NET, Django
+                        </dd>
+
+
                         <dt>Tools</dt>
-                        <dd>VS Code, MS Word, PowerPoint, Excel</dd>
+
+                        <dd>
+                            VS Code, MS Word, PowerPoint, Excel
+                        </dd>
+
                     </dl>
+
                 </div>
+
             </section>
+
         </div>
+
+
+        <!-- ================= PROJECTS ================= -->
 
         <div class="projects-container">
+
             <section id="Project">
+
                 <div class="projects-heading">
+
                     <h2>My projects</h2>
+
                 </div>
+
+
                 <div class="projects-content">
-                    <article>
-                        <div class="project-one">
-                            <h3>School Management System</h3>
-                            <p>
-                                A system for managing daily school records such as student details, classes, teachers, and attendance, so that this information is kept in one organised place.
-                            </p>
-                        </div>
-                    </article>
 
                     <article>
-                        <div class="project-two">
-                            <h3>Inventory Management</h3>
+
+                        <div class="project-one">
+
+                            <h3>
+                                School Management System
+                            </h3>
+
                             <p>
-                                An application for tracking products in stock, recording items that come in and go out, and keeping the stock list up to date.
+                                A system for managing daily school records such
+                                as student details, classes, teachers, and
+                                attendance, so that this information is kept
+                                in one organised place.
                             </p>
+
                         </div>
+
                     </article>
+
+
+                    <article>
+
+                        <div class="project-two">
+
+                            <h3>
+                                Inventory Management
+                            </h3>
+
+                            <p>
+                                An application for tracking products in stock,
+                                recording items that come in and go out, and
+                                keeping the stock list up to date.
+                            </p>
+
+                        </div>
+
+                    </article>
+
                 </div>
+
             </section>
+
         </div>
+
+
+        <!-- ================= EDUCATION ================= -->
 
         <div class="education-container">
+
             <section id="Education">
+
                 <div class="education-heading">
+
                     <h2>Education</h2>
+
                 </div>
+
+
                 <div class="education-content">
+
                     <table>
+
                         <thead>
+
                             <tr>
+
                                 <th>S.N.</th>
+
                                 <th>Level</th>
+
                                 <th>Institution</th>
+
                                 <th>GPA</th>
+
                                 <th>Grade</th>
+
                                 <th>Completion date</th>
+
                             </tr>
+
                         </thead>
+
+
                         <tbody>
+
                             <tr>
+
                                 <td>1</td>
+
                                 <td>Secondary</td>
+
                                 <td>LA</td>
+
                                 <td>3.9</td>
+
                                 <td>A+</td>
+
                                 <td>2022</td>
+
                             </tr>
+
+
                             <tr>
+
                                 <td>2</td>
+
                                 <td>High secondary</td>
+
                                 <td>NY</td>
+
                                 <td>4.0</td>
+
                                 <td>A+</td>
+
                                 <td>2024</td>
+
                             </tr>
+
+
                             <tr>
+
                                 <td>3</td>
+
                                 <td>College</td>
+
                                 <td>Washington DC</td>
+
                                 <td>4.0</td>
+
                                 <td>A+</td>
+
                                 <td>2029</td>
+
                             </tr>
+
                         </tbody>
+
                     </table>
+
                 </div>
+
             </section>
+
         </div>
+
+
+        <!-- ================= CONTACT ================= -->
 
         <div class="contact-container">
+
             <main>
+
                 <section>
+
                     <div class="contact-heading">
+
                         <h2>Contact Me</h2>
+
                     </div>
+
+
                     <div class="form">
+
                         <form>
+
                             <div class="first-name">
-                                <label for="first-name">First Name</label><br>
-                                <input type="text" id="first-name" placeholder="First Name">
+
+                                <label for="first-name">
+                                    First Name
+                                </label>
+
+                                <br>
+
+                                <input
+                                    type="text"
+                                    id="first-name"
+                                    placeholder="First Name"
+                                >
+
                             </div>
+
 
                             <div class="second-name">
-                                <label for="second-name">Second Name</label><br>
-                                <input type="text" id="second-name" placeholder="Second Name">
+
+                                <label for="second-name">
+                                    Second Name
+                                </label>
+
+                                <br>
+
+                                <input
+                                    type="text"
+                                    id="second-name"
+                                    placeholder="Second Name"
+                                >
+
                             </div>
+
 
                             <div class="phone-number">
-                                <label for="phone">Phone Number</label><br>
-                                <input type="tel" id="phone" placeholder="Phone num">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <br>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="Phone num"
+                                >
+
                             </div>
+
 
                             <div class="email">
-                                <label for="email">Email</label><br>
-                                <input type="email" id="email" placeholder="Email">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <br>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Email"
+                                >
+
                             </div>
+
 
                             <div class="submit-button">
-                                <button type="submit">Submit</button>
+
+                                <button type="submit">
+                                    Submit
+                                </button>
+
                             </div>
+
                         </form>
+
                     </div>
+
 
                     <div class="social-links">
+
                         <div class="instagram">
-                            <a href="https://www.instagram.com" target="_blank">
-                                <img src="images/instagram.jpg" alt="Instagram" width="50">
+
+                            <a
+                                href="https://www.instagram.com"
+                                target="_blank"
+                            >
+
+                                <img
+                                    src="images/instagram.jpg"
+                                    alt="Instagram"
+                                    width="50"
+                                >
+
                             </a>
+
                         </div>
+
+
                         <div class="linkedin">
-                            <a href="https://www.linkedin.com/in/asbin-bhattarai-40393a350/" target="_blank">
-                                <img src="images/linkedin.png" alt="LinkedIn" width="50">
+
+                            <a
+                                href="https://www.linkedin.com/in/asbin-bhattarai-40393a350/"
+                                target="_blank"
+                            >
+
+                                <img
+                                    src="images/linkedin.png"
+                                    alt="LinkedIn"
+                                    width="50"
+                                >
+
                             </a>
+
                         </div>
+
+
                         <div class="email-link">
+
                             <a href="mailto:asbinbhattarai4321@gmail.com">
-                                <img src="images/email.png" alt="Email" width="50">
+
+                                <img
+                                    src="images/email.png"
+                                    alt="Email"
+                                    width="50"
+                                >
+
                             </a>
+
                         </div>
+
                     </div>
+
                 </section>
+
             </main>
+
         </div>
 
+
+        <!-- ================= FOOTER ================= -->
+
         <div class="footer-container">
+
             <div class="footer">
+
                 <footer>
+
                     &copy; Copyright All Rights Reserved 2026
+
                 </footer>
+
             </div>
+
         </div>
 
     </div>

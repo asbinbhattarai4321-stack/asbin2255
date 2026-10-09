@@ -1,4 +1,3 @@
-/* ===== Base ===== */
 body {
     margin: 0;
     background-color: rgb(245, 245, 245);
@@ -8,6 +7,7 @@ body {
 }
 
 /* ===== Header & Navigation ===== */
+
 header {
     background-color: #2f4858;
     color: #ffffff;
@@ -61,7 +61,9 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* ===== Section wrappers ===== */
+
+/* ===== Main Containers ===== */
+
 .about-container,
 .skills-container,
 .projects-container,
@@ -95,7 +97,9 @@ nav a:hover {
     background-color: #fdf0f5;
 }
 
+
 /* ===== Headings ===== */
+
 .about-heading h1 {
     color: #2f4858;
 }
@@ -116,7 +120,9 @@ nav a:hover {
     color: #c2185b;
 }
 
+
 /* ===== About ===== */
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -136,7 +142,98 @@ nav a:hover {
     border-radius: 8px;
 }
 
+
+/* ===== IMAGE SLIDER ===== */
+
+.slider-container {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ===== Slider Buttons ===== */
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: aqua;
+    color: black;
+
+    border: none;
+    padding: 10px 15px;
+
+    cursor: pointer;
+    border-radius: 5px;
+
+    font-size: 20px;
+    z-index: 10;
+}
+
+.slider-btn.prev {
+    left: 10px;
+}
+
+.slider-btn.next {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background-color: #f4a300;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.slide-indicator {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #2f4858;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #2f4858;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.slide-indicator[aria-current="true"],
+.slide-indicator:hover {
+    background-color: #2f4858;
+    color: #ffffff;
+}
+
+
 /* ===== Skills ===== */
+
 .skills-content dt {
     font-weight: bold;
     margin-top: 10px;
@@ -147,7 +244,9 @@ nav a:hover {
     color: #333333;
 }
 
+
 /* ===== Projects ===== */
+
 .projects-content {
     display: flex;
     flex-direction: column;
@@ -182,7 +281,9 @@ nav a:hover {
     color: #f4a300;
 }
 
+
 /* ===== Education ===== */
+
 .education-container table {
     width: 100%;
     border-collapse: collapse;
@@ -201,7 +302,9 @@ nav a:hover {
     color: #ffffff;
 }
 
+
 /* ===== Contact ===== */
+
 .form input,
 .form button {
     padding: 6px 10px;
@@ -223,7 +326,9 @@ nav a:hover {
     margin-top: 15px;
 }
 
+
 /* ===== Footer ===== */
+
 .footer-container {
     background-color: #2f4858;
     color: #ffffff;
@@ -233,8 +338,11 @@ nav a:hover {
     margin: 20px;
 }
 
+
 /* ===== Responsive: Tablet ===== */
+
 @media (min-width: 768px) and (max-width: 1024px) {
+
     .about-content {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -244,10 +352,14 @@ nav a:hover {
     nav ul {
         gap: 25px;
     }
+
 }
 
+
 /* ===== Responsive: Mobile ===== */
+
 @media (max-width: 767px) {
+
     .header-container {
         flex-direction: column;
     }
@@ -267,14 +379,22 @@ nav a:hover {
     .projects-content {
         gap: 15px;
     }
+
+    .slide img {
+        height: 250px;
+    }
+
 }
 
+
+/* ===== Education Responsive ===== */
 
 .education-content {
     overflow-x: auto;
 }
 
 @media (max-width: 767px) {
+
     .education-container table {
         font-size: 14px;
     }
@@ -283,4 +403,5 @@ nav a:hover {
     .education-container td {
         padding: 6px 4px;
     }
+
 }
