@@ -1,59 +1,59 @@
-/* ===== Hobbies ===== */
+// /* ===== Hobbies ===== */
 
-const Hobbies = ["Coding", "Reading", "Gaming"];
-
-
-/* ===== Button Function ===== */
-
-function onButtonClick() {
-
-    console.log("Button Clicked");
-
-    let name = document.getElementById("newInput").value;
-
-    let age = document.getElementById("ageInput").value;
-
-    let result = "";
+// const Hobbies = ["Coding", "Reading", "Gaming"];
 
 
-    if (age < 18) {
+// /* ===== Button Function ===== */
 
-        result = `<h2>Hello ${name}, You are a minor.</h2>`;
+// function onButtonClick() {
 
-    }
+//     console.log("Button Clicked");
 
-    else if (age >= 18 && age < 65) {
+//     let name = document.getElementById("newInput").value;
 
-        result = `<h2>Hello ${name}, You are an adult.</h2>`;
+//     let age = document.getElementById("ageInput").value;
 
-    }
-
-    else {
-
-        result = `<h2>Hello ${name}, You are a senior.</h2>`;
-
-    }
+//     let result = "";
 
 
-    result += `<p>Your hobbies are:</p><ul>`;
+//     if (age < 18) {
+
+//         result = `<h2>Hello ${name}, You are a minor.</h2>`;
+
+//     }
+
+//     else if (age >= 18 && age < 65) {
+
+//         result = `<h2>Hello ${name}, You are an adult.</h2>`;
+
+//     }
+
+//     else {
+
+//         result = `<h2>Hello ${name}, You are a senior.</h2>`;
+
+//     }
 
 
-    for (let i = 0; i < Hobbies.length; i++) {
-
-        result += `<li>${Hobbies[i]}</li>`;
-
-    }
+//     result += `<p>Your hobbies are:</p><ul>`;
 
 
-    result += `</ul>`;
+//     for (let i = 0; i < Hobbies.length; i++) {
+
+//         result += `<li>${Hobbies[i]}</li>`;
+
+//     }
 
 
-    document.getElementById("output").innerHTML = result;
+//     result += `</ul>`;
 
 
-    alert("Submitted");
+//     document.getElementById("output").innerHTML = result;
 
-}
+
+//     alert("Submitted");
+
+// }
 
 
 /* ================================================= */
